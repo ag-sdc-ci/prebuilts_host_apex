@@ -3,74 +3,44 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apexer",
-    main: "bin/apexer",
-    srcs: ["bin/apexer"],
-    libs: [
-        "apex_manifest",
-        "apexer_wrapper_utils",
-    ],
+    src: "bin/apexer",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "deapexer",
-    main: "bin/deapexer",
-    srcs: ["bin/deapexer"],
-    libs: [
-        "apex_manifest",
-    ],
+    src: "bin/deapexer",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "conv_apex_manifest",
-    main: "bin/conv_apex_manifest",
-    srcs: ["bin/conv_apex_manifest"],
-    libs: [
-        "apex_manifest",
-    ],
+    src: "bin/conv_apex_manifest",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apex_compression_tool",
-    main: "bin/apex_compression_tool",
-    srcs: ["bin/apex_compression_tool"],
-    libs: [
-        "apex_manifest",
-    ],
+    src: "bin/apex_compression_tool",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apex_elf_checker",
-    main: "bin/apex_elf_checker",
-    srcs: ["bin/apex_elf_checker"],
+    src: "bin/apex_elf_checker",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apexd_host",
-    main: "bin/apexd_host",
-    srcs: ["bin/apexd_host"],
-    libs: [
-        "apex_manifest",
-    ],
+    src: "bin/apexd_host",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apexer_with_DCLA_preprocessing",
-    main: "bin/apexer_with_DCLA_preprocessing",
-    srcs: ["bin/apexer_with_DCLA_preprocessing"],
-    libs: [
-        "apexer_wrapper_utils",
-    ],
+    src: "bin/apexer_with_DCLA_preprocessing",
 }
 
-python_binary_host {
+sh_binary_host {
     name: "apexer_with_trim_preprocessing",
-    main: "bin/apexer_with_trim_preprocessing",
-    srcs: ["bin/apexer_with_trim_preprocessing"],
-    libs: [
-        "apexer_wrapper_utils",
-    ],
+    src: "bin/apexer_with_trim_preprocessing",
 }
 
 python_library_host {
